@@ -40,7 +40,7 @@ In this analysis, the purpose was to develop a machine learning model to predict
 
 -Precision (Label 0): 1.00
 
--Precision (Label 1): 0.88
+-Precision (Label 1): 0.85
 
 -Recall (Label 0): 0.99
 
