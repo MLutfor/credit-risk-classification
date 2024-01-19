@@ -29,30 +29,30 @@ In this analysis, the purpose was to develop a machine learning model to predict
 
 ## Results
 
-Logistic Regression with Original Data:
+### Logistic Regression with Original Data:
 
-Balanced Accuracy: 0.95
+-Balanced Accuracy: 0.95
 
-Precision (Label 0): 1.00
+-Precision (Label 0): 1.00
 
-Precision (Label 1): 0.88
+-Precision (Label 1): 0.88
 
-Recall (Label 0): 0.99
+-Recall (Label 0): 0.99
 
-Recall (Label 1): 0.91
+-Recall (Label 1): 0.91
 
 
-Logistic Regression with Resampled Data:
+### Logistic Regression with Resampled Data:
 
-Balanced Accuracy: 0.99
+-Balanced Accuracy: 0.99
 
-Precision (Label 0): 1.00
+-Precision (Label 0): 1.00
 
-Precision (Label 1): 0.84
+-Precision (Label 1): 0.84
 
-Recall (Label 0): 0.99
+-Recall (Label 0): 0.99
 
-Recall (Label 1): 0.99
+-Recall (Label 1): 0.99
 
 
 ## Summary
