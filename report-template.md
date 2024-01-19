@@ -1,31 +1,29 @@
-# Module 12 Report Template
+# Module 12 Report
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+In this analysis, the purpose was to develop a machine learning model to predict credit risk.  The dataset used for this model contained information for loan applications, such as loan amount, interest rate, and applicant's total debt. The objective was to predict credit risk.  Which are separated between two classes, healthy or high-risk loans. The analysis included various stages of the machine learning process.  These were splitting the data into training and testing sets, model training using logistic regression, and random oversampling.  The logistic regression models were used for both the original data and resampled training data.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+Logistic Regression with Original Data:
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+Balanced Accuracy: 0.95
+Precision (Label 0): 1.00
+Precision (Label 1): 0.88
+Recall (Label 0): 0.99
+Recall (Label 1): 0.91
+Logistic Regression with Resampled Data:
 
+Balanced Accuracy: 0.99
+Precision (Label 0): 1.00
+Precision (Label 1): 0.84
+Recall (Label 0): 0.99
+Recall (Label 1): 0.99
+Summary
 
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+The logistic regression model with resampled data performed better than the model with the original data because of its balanced accuracy, precision, and recall scores.  This is probably because RandomOverSampler helped with the balance of the training process.  This model is highly recommended due to the balanced accuracy of 99%, balanced precision and recall scores for both healthy and high-risk loans.  However, this can depend on the company's priorities.  If predicting high risk loans(Label 1) is more important, the model with resampled data is recommended.  The only downside with this is that it's more critical in labeling the loans as high risk, which will probably lead to fewer false positives.
